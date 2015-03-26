@@ -1,0 +1,10 @@
+<h1> Welcome to your dashboard </h1>
+<%= form_for @dashboard.new_text_shout do |form| %>
+  <%= form.text_field :body, placehoder: 'Shout content here' %>
+  <%= form.submit 'Shout!' %>
+<% end %>
+<%= form_for @dashboard.new_photo_shout do |form| %>
+  <%= form.file_field :image %>
+  <%= form.submit 'Shout!' %>
+<% end %>
+<%= render @dashboard.timeline %>
