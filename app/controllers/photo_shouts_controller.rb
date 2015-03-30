@@ -1,4 +1,4 @@
-class PhotoShoutsController < ShoutsController
+class PhotoShoutsController < ApplicationController
   def create
     content = build_content
     create_shout(content)
