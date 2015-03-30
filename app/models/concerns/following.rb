@@ -17,6 +17,9 @@ module Following
     #add some class methods here
   end
 
+  def can_follow?(user)
+    self != user
+  end
 
   def following? user
     followed_user_ids.include? user.id
